@@ -4,7 +4,7 @@ import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.shouldBe
 
-class FirstTaskTest : FunSpec({
+class SecondTaskTest : FunSpec({
     test("calculates correct answer") {
         val input = """
             1721
@@ -17,14 +17,12 @@ class FirstTaskTest : FunSpec({
 
         val result = SecondTask.calculate(input)
 
-        result shouldBe 514579
+        result shouldBe 241861950
     }
 
     test("throws if no correct answer") {
         val input = """
-            979
             366
-            299
             675
             1456
         """.trimIndent()

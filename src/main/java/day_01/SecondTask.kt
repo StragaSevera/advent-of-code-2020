@@ -2,7 +2,7 @@ package day_01
 
 import utils.resourceToString
 
-object FirstTask {
+object SecondTask {
     fun calculate(input: String): Int {
         val data = prepareData(input)
         return calculateResult(data)
@@ -11,13 +11,16 @@ object FirstTask {
     private fun prepareData(input: String): List<Int> = input.split("\n").map { it.toInt() }
 
     private fun calculateResult(data: List<Int>): Int {
-        return data.uniquePairs().find { it.first + it.second == 2020 }?.run { first * second } ?: error("There are no valid items in a list!")
+        return data.uniqueTriples().find { it.first + it.second + it.third == 2020 }?.run { first * second * third }
+            ?: error("There are no valid items in a list!")
     }
 
-    private fun <T> List<T>.uniquePairs() = sequence {
+    private fun <T> List<T>.uniqueTriples() = sequence {
         for (i in indices) {
             for (j in (i + 1) until size) {
-                yield(get(i) to get(j))
+                for (k in (j + 1) until size) {
+                    yield(Triple(get(i), get(j), get(k)))
+                }
             }
         }
     }
