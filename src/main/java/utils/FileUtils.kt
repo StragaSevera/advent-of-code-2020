@@ -1,3 +1,3 @@
 package utils
 
-fun readResourceToString(day: String, name: String) = String.javaClass.getResource("/$day/$name.txt").readText()
+fun resourceToString(day: String, name: String) = day.javaClass.getResource("/$day/$name.txt").readText()

@@ -1,5 +1,7 @@
 package day_01
 
+import utils.resourceToString
+
 object FirstTask {
     fun calculate(input: String): Int {
         val data = prepareData(input)
@@ -21,3 +23,10 @@ object FirstTask {
     }
 }
 
+fun main() {
+    val input = resourceToString("day_01", "FirstTask")
+    val result = FirstTask.calculate(input)
+    println()
+    println("======")
+    println("Result: $result")
+}
