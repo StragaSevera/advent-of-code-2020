@@ -3,7 +3,7 @@ import io.kotest.matchers.shouldBe
 import utils.resourceToString
 
 class FileUtilsTest: FunSpec({
-    test("correctly reads data for first fay and first task") {
+    test("correctly reads data for first day") {
         val sample = """
             1934
             1702
@@ -207,7 +207,7 @@ class FileUtilsTest: FunSpec({
             1779
         """.trimIndent()
 
-        val result = resourceToString("day_01", "FirstTask")
+        val result = resourceToString("day_01", "Task")
 
         result shouldBe sample
     }
