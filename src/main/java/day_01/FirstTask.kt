@@ -25,7 +25,7 @@ object FirstTask {
 
 fun main() {
     val input = resourceToString("day_01", "Task")
-    val result = SecondTask.calculate(input)
+    val result = FirstTask.calculate(input)
     println()
     println("======")
     println("Result: $result")

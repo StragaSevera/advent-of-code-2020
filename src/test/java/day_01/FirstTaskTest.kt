@@ -15,7 +15,7 @@ class FirstTaskTest : FunSpec({
             1456
         """.trimIndent()
 
-        val result = SecondTask.calculate(input)
+        val result = FirstTask.calculate(input)
 
         result shouldBe 514579
     }
@@ -29,7 +29,7 @@ class FirstTaskTest : FunSpec({
             1456
         """.trimIndent()
 
-        val result = { SecondTask.calculate(input) }
+        val result = { FirstTask.calculate(input) }
 
         shouldThrow<IllegalStateException>(result)
     }
