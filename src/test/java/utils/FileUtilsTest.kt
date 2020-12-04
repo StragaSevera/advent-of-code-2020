@@ -1,3 +1,5 @@
+package ru.ought.advent_of_code.utils
+
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.shouldBe
 import utils.resourceToString
