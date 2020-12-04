@@ -1,4 +1,4 @@
-package day_01
+package ru.ought.advent_of_code.day_01
 
 import utils.resourceToString
 

@@ -1,6 +1,5 @@
 package ru.ought.advent_of_code.day_03
 
-import day_03.FirstTask
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.shouldBe
 
